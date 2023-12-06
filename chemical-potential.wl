@@ -10,7 +10,7 @@
 
 g = 2; (*Gyro-magnetic factor (g-factor) of electrons*)
 me = 511; (*Mass of electrons in [keV]*)
-loT = 10; hiT = 300; (*Cosmic temperature range in [keV]*)
+loT = 1; hiT = 1000; (*Cosmic temperature range in [keV]*)
 Xp = 0.878; (*Baryon fraction within protons (excluding neutrons)*)
 nBs = 0.865 10^(-10); (*Comoving baryon density to entropy density ratio*)
 gs = 3.91; (*Relativistic fermion and boson degrees of freedom*)
