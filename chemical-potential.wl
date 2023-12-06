@@ -10,7 +10,7 @@
 
 g = 2; (*Gyro-magnetic factor (g-factor) of electrons*)
 me = 511; (*Mass of electrons in [keV]*)
-loT = 10; hiT = 300; (*Cosmic temperature range in [keV]*)
+loT = 1; hiT = 1000; (*Cosmic temperature range in [keV]*)
 Xp = 0.878; (*Baryon fraction within protons (excluding neutrons)*)
 nBs = 0.865 10^(-10); (*Comoving baryon density to entropy density ratio*)
 gs = 3.91; (*Relativistic fermion and boson degrees of freedom*)
@@ -96,7 +96,7 @@ style3 = ContourStyle -> {Directive[Black]};
 potentialplot[table_,style_] := ContourPlot[
  (Pi^(2) Xp nBs (2 Pi^(2) gs)/45) == table,
  {T, loT, hiT},{M,10^(-12),10^(2)},
- PlotRange -> {{10,300},{10^(3),10^(-12)}},Frame -> True,
+ PlotRange -> {{1,1000},{10^(3),10^(-12)}},Frame -> True,
  AspectRatio -> 3/2,
  FrameLabel -> {"T [keV]", "\[Mu]/T"},
  LabelStyle -> Directive[Black,14,FontFamily -> "Times"],
@@ -118,3 +118,4 @@ potentialplot[table_,style_] := ContourPlot[
 
 
 Show[potentialplot[table1,style1],potentialplot[table2,style2],potentialplot[table3,style3],PlotRange->All]
+
