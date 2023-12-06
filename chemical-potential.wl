@@ -5,7 +5,7 @@
 
 
 (* ::Text:: *)
-(*Here we define the physical and cosmological constants requires to evaluate the early universe electron-positron gas.*)
+(*Here we define the physical and cosmological constants requires to evaluate the early universe electron-positron gas. To change underlying physics, change these values.*)
 
 
 g = 2; (*Gyro-magnetic factor (g-factor) of electrons*)
