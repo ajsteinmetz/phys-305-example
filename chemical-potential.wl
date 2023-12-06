@@ -96,7 +96,7 @@ style3 = ContourStyle -> {Directive[Black]};
 potentialplot[table_,style_] := ContourPlot[
  (Pi^(2) Xp nBs (2 Pi^(2) gs)/45) == table,
  {T, loT, hiT},{M,10^(-12),10^(2)},
- PlotRange -> {{10,300},{10^(3),10^(-12)}},Frame -> True,
+ PlotRange -> {{1,1000},{10^(3),10^(-12)}},Frame -> True,
  AspectRatio -> 3/2,
  FrameLabel -> {"T [keV]", "\[Mu]/T"},
  LabelStyle -> Directive[Black,14,FontFamily -> "Times"],
