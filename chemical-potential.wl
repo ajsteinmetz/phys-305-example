@@ -118,3 +118,4 @@ potentialplot[table_,style_] := ContourPlot[
 
 
 Show[potentialplot[table1,style1],potentialplot[table2,style2],potentialplot[table3,style3],PlotRange->All]
+
